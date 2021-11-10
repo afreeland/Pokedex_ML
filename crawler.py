@@ -52,7 +52,7 @@ for imageType in imageTypes:
     googleCrawler = GoogleImageCrawler(parser_threads=2, downloader_threads=4,
                                        storage={'root_dir': imageDirectory})
     googleCrawler.crawl(
-        keyword=searchTerm, max_num=1000,
+        keyword=imageType, max_num=1000,
         min_size=(200, 200), max_size=None
     )
 
